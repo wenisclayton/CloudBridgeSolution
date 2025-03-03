@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudBridge.API", "src\CloudBridge.API\CloudBridge.API.csproj", "{6B291209-B67B-40B8-A890-A314DAAED346}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudBridge.Messaging", "src\CloudBridge.Messaging\CloudBridge.Messaging.csproj", "{6E1BBA34-3906-4541-ACCC-B8E143107F0B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EAA44C12-8140-456B-AA22-3C512940B863}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{52FADD08-112A-44E6-A601-E03D75048F46}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infra", "infra", "{F75A55B6-4BAB-44F7-B665-62671DA7E788}"
+	ProjectSection(SolutionItems) = preProject
+		infra\aws.tf = infra\aws.tf
+		infra\azure.tf = infra\azure.tf
+		infra\gcp.tf = infra\gcp.tf
+		infra\main.tf = infra\main.tf
+		infra\outputs.tf = infra\outputs.tf
+		infra\rabbitmq.tf = infra\rabbitmq.tf
+		infra\terraform.tfvars = infra\terraform.tfvars
+		infra\variables.tf = infra\variables.tf
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudBridge.Shared", "src\CloudBridge.Shared\CloudBridge.Shared.csproj", "{81F36390-BB44-408A-B9AC-1584ADE4A929}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudBridge.Tests", "tests\CloudBridge.Tests\CloudBridge.Tests.csproj", "{FD073A07-2A8C-B4A5-400B-02B233F6F42A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B291209-B67B-40B8-A890-A314DAAED346}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B291209-B67B-40B8-A890-A314DAAED346}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B291209-B67B-40B8-A890-A314DAAED346}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B291209-B67B-40B8-A890-A314DAAED346}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E1BBA34-3906-4541-ACCC-B8E143107F0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E1BBA34-3906-4541-ACCC-B8E143107F0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E1BBA34-3906-4541-ACCC-B8E143107F0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E1BBA34-3906-4541-ACCC-B8E143107F0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81F36390-BB44-408A-B9AC-1584ADE4A929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81F36390-BB44-408A-B9AC-1584ADE4A929}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81F36390-BB44-408A-B9AC-1584ADE4A929}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81F36390-BB44-408A-B9AC-1584ADE4A929}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD073A07-2A8C-B4A5-400B-02B233F6F42A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD073A07-2A8C-B4A5-400B-02B233F6F42A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD073A07-2A8C-B4A5-400B-02B233F6F42A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD073A07-2A8C-B4A5-400B-02B233F6F42A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6B291209-B67B-40B8-A890-A314DAAED346} = {EAA44C12-8140-456B-AA22-3C512940B863}
+		{6E1BBA34-3906-4541-ACCC-B8E143107F0B} = {EAA44C12-8140-456B-AA22-3C512940B863}
+		{81F36390-BB44-408A-B9AC-1584ADE4A929} = {EAA44C12-8140-456B-AA22-3C512940B863}
+		{FD073A07-2A8C-B4A5-400B-02B233F6F42A} = {52FADD08-112A-44E6-A601-E03D75048F46}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01B80393-9C89-4DB7-99E9-3632203DB288}
+	EndGlobalSection
+EndGlobal

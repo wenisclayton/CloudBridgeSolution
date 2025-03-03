@@ -1,0 +1,6 @@
+@CloudBridge.API_HostAddress = http://localhost:5118
+
+GET {{CloudBridge.API_HostAddress}}/pedido/
+Accept: application/json
+
+###
